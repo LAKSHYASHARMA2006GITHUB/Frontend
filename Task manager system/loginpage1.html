@@ -1,0 +1,178 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Log in</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "poppins", sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            flex-basis: 500px;
+            background-image: linear-gradient(to right, rgb(143, 143, 245), white, rgb(240, 83, 240));
+        }
+
+        .outer {
+            width: 500px;
+            height: 500px;
+            background-image: linear-gradient(to right, white, aqua);
+            display: flex;
+            border-radius: 20px;
+
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .outer h1 {
+            font-size: 36px;
+            text-align: center;
+        }
+
+        /* .outer  { 
+            width: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+           
+            justify-content: space-between;
+            flex-grow: 3px;
+            flex-shrink: 3px; 
+            height: 50px;
+            margin: 20px 0px;
+            margin-right: 20px;
+
+        }  */
+        .inner {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: left;
+        }
+
+        .inputbox {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: center;
+
+        }
+
+        .inputbox {
+            padding: 10px;
+            width: 70%;
+            height: 50px;
+            font-size: 20px;
+            /* border: 2px solid black; */
+            border-radius: 10px;
+            margin-left: 50px;
+            /* align-items: center; */
+            /* justify-content: space-evenly;  */
+
+
+        }
+
+        form input {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        #email {
+            margin-right: 0px;
+            margin-left: 35.5px;
+        }
+
+        #pass {
+            margin-left: 10px;
+        }
+
+
+        button {
+
+            width: 100px;
+            height: 30px;
+            border-radius: 15PX;
+            background-color: whitesmoke;
+
+        }
+
+        button:hover {
+            background-color: rgb(156, 59, 221);
+        }
+
+        button:active {
+            transform: translateY(4px);
+        }
+
+        input i {
+            position: absolute;
+            /* margin-right: ; */
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <form class="inner">
+            <h1>Log in</h1>
+            <div class="inputbox"><label>Username:</label> <input type="text" placeholder="Username"><i
+                    class='bx bxs-user'></i>
+            </div>
+            <div class="inputbox">
+                <label>Email:</label> <input type="text" placeholder="Enter your Email" required id="email">
+                <i class='bx bxs-envelope'></i>
+            </div>
+            <div class="inputbox"><label>password:</label> <input type="text" name="Password" id="pass"
+                    placeholder="password">
+                <i class=' bx bxs-lock'></i>
+            </div>
+
+            <div class="inputbox"> <input type="checkbox"><label>Remember me.</label>
+                <a href="">Forgot password?</a>
+            </div>
+            <div>
+
+            </div>
+
+            <button type="submit" class="btn">Log in</button>
+            <div class="register-link">
+                <P>Don't have an account?<a href="registeration_new.html">Register</a></P>
+            </div>
+        </form>
+    </div>
+
+    <!-- <div class="Forgot">Frogot password <input type="" name="" id=""></div> -->
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration page</title>
+    <style>
+        /* @media (max-width: 768px) { */
+
+        body {
+            width: 100%;
+
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            /* background-color: purple; */
+            min-height: 100vh;
+            background: url('backgro.png') center center fixed ;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            /* background-image: no-repeat; */
+            /* background-image: url('C:\Users\DELL\OneDrive\Desktop\task Manager system PROJECT'); */
+
+        }
+
+        body backround-image {
+            width: 10%;
+        }
+
+
+
+        section {
+            /* border: 1px solid black; */
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+
+            /* justify-content: center; */
+            align-items: center;
+            margin: 0% 14% 14% 14%;
+            border-radius: 20px;
+            /* background-color: rgb(206, 203, 200); */
+            /* background-image: linear-gradient(to right, white, blue, white); */
+        }
+
+        form {
+            /* border: 1px solid black; */
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+
+            /* align-items: center; */
+            padding: 10px;
+            /* background-image: linear-gradient(to right, white, blue, white); */
+
+
+        }
+
+
+
+        .container {
+            margin-bottom: 10px;
+            padding: 0px 10px;
+            /* border: 1px solid black; */
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-grow: 3;
+            flex-shrink: 3;
+
+        }
+
+        .container label {
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+            font-size: 15px;
+
+            font-weight: bold;
+
+
+        }
+
+        .container input {
+            width: 70%;
+            font-size: 15px;
+            padding: 4px 0px 0px 0px;
+            border-radius: 10px;
+        }
+
+        /* #mob {
+            width: 70%;
+        } */
+
+
+        .btn {
+            margin: 10px;
+            font-size: 20px;
+            border-radius: 10px;
+
+        }
+
+        .btn:hover {
+            background-color: rgb(31, 45, 203);
+            cursor: pointer;
+        }
+
+        .btn:active {
+            box-shadow: 0px 5px grey;
+            transform: translateY(3px);
+        }
+
+        #inner-section {
+            width: 60%;
+            margin: 30px;
+            padding: 30px;
+            background-image: linear-gradient(to right, white, aqua);
+            flex-basis: 500px;
+            border-radius: 20px;
+            opacity: .9;
+        }
+
+        #para-id {
+            font-size: 20px;
+
+        }
+
+        #para-id a {
+            text-decoration: none;
+            color: red;
+
+        }
+
+        #para-id a:hover {
+            color: rgb(25, 41, 188);
+        }
+
+        .section-heading {
+            font-style: italic;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        body
+    </style>
+</head>
+
+<body style="background-image: url('backgro.png');">
+    <section>
+        <h1 class="section-heading">WELCOME TO TASK MANAGER SYSTEM</h1>
+        <section id="inner-section" ">
+            <h1> Register Now</h1>
+            <form class="">
+            <div class=" container" id="div1"><label for="name">Name</label>
+            <input type="text" placeholder="" id="item1">
+            </div><br>
+            <div class="container"><label for="mobile-no">Mobile Number</label>
+                <input type="number" name="number" id="mob">
+            </div><br>
+            <div class="container"><label for="Email">Email</label>
+                <input type="email" name="email" id="Email">
+            </div><br>
+            <div class="container"><label for="password">Password</label>
+                <input type="password" name="password" id="pass">
+
+            </div>
+            <br>
+            </form>
+            <div class="container"><button class="btn">continue</button></div>
+            <div class="container" id="para-id">
+                <p>Already register. <a href="loginpage.html">Log in.</a></p>
+            </div>
+
+        </section>
+
+    </section>
+</body>
+
+</html>
